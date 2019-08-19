@@ -1,4 +1,4 @@
-package GO_JSON
+package JSON
 
 import (
 	"fmt"
