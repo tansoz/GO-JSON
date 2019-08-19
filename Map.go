@@ -25,7 +25,7 @@ func (this *data)ToBool()bool{
 func parseBool(s string)bool {
 	for i := range s {
 		char := s[i];
-		if (char == 't'||char == 'T') && i + 3 <= len(s[i:]) && (s[i+1] == 'r'||s[i+1] == 'R') &&(s[i+1] == 'u'||s[i+1] == 'U') &&(s[i+1] == 'e'||s[i+1] == 'E')  {
+		if (char == 't'||char == 'T') && 3 <= len(s[i+1:]) && (s[i+1] == 'r'||s[i+1] == 'R') &&(s[i+2] == 'u'||s[i+2] == 'U') &&(s[i+3] == 'e'||s[i+3] == 'E')  {
 			return true
 		}
 	}
